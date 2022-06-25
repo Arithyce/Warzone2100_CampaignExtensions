@@ -88,6 +88,7 @@
 	},
 	"BabaCrane1": {
 		"body": "B2crane1",
+		"propulsion": "BaBaProp",
 		"construct": "scavCrane1",
 		"id": "BabaCrane",
 		"name": "Crane1",
@@ -95,6 +96,7 @@
 	},
 	"BabaCrane2": {
 		"body": "B2crane2",
+		"propulsion": "BaBaProp",
 		"construct": "scavCrane2",
 		"id": "BabaCrane2",
 		"name": "Crane2",
