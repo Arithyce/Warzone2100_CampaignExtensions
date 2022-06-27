@@ -1,29 +1,14 @@
 {
-	"B2crane1": {
+	"B2crane": {
 		"armourHeat": 4,
 		"armourKinetic": 10,
 		"buildPoints": 50,
 		"buildPower": 25,
 		"class": "Droids",
 		"hitpoints": 140,
-		"id": "B2crane1",
-		"model": "cranebody1.pie",
-		"name": "*crane1*",
-		"powerOutput": 2800,
-		"size": "LIGHT",
-		"weaponSlots": 1,
-		"weight": 1600
-	},
-	"B2crane2": {
-		"armourHeat": 4,
-		"armourKinetic": 10,
-		"buildPoints": 50,
-		"buildPower": 25,
-		"class": "Droids",
-		"hitpoints": 140,
-		"id": "B2crane2",
-		"model": "cranebody2.pie",
-		"name": "*crane2*",
+		"id": "B2crane",
+		"model": "cranebody.pie",
+		"name": "*Crane Body*",
 		"powerOutput": 2800,
 		"size": "LIGHT",
 		"weaponSlots": 1,

@@ -20,5 +20,4 @@ function eventStartLevel()
 	{
 		setPower(PLAYER_POWER, CAM_HUMAN_PLAYER);
 	}
-
 }

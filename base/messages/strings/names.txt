@@ -557,10 +557,9 @@ Cyb-BB-Rkt-GROUND		_("Bunker Blaster")
 // New Style Repair Center - replaces all instances of A0RepairCentre
 A0RepairCentre2		_("Repair Center")
 
-// Cranes (scavenger trucks)
-BabaCrane1     _("Crane1")
+// Crane (scavenger truck)
 
-BabaCrane2     _("Crane2")
+BabaCrane     _("Construction Vehicle")
 
 
 // CAM3 Start - Available Units

@@ -1,24 +1,13 @@
 {
-	"scavCrane1": {
+	"scavCrane": {
 		"buildPoints": 25,
 		"buildPower": 10,
 		"constructPoints": 12,
 		"droidType": "DROID_CONSTRUCT",
 		"hitpoints": 35,
-		"id": "scavCrane1",
-		"name": "Crane1",
-		"sensorModel": "cranearm1.pie",
-		"weight": 800
-	},
-	"scavCrane2": {
-		"buildPoints": 25,
-		"buildPower": 10,
-		"constructPoints": 12,
-		"droidType": "DROID_CONSTRUCT",
-		"hitpoints": 35,
-		"id": "scavCrane2",
-		"name": "Crane2",
-		"sensorModel": "cranearm2.pie",
+		"id": "scavCrane",
+		"name": "Crane Arm",
+		"sensorModel": "cranearm.pie",
 		"weight": 800
 	},
 	"Spade1Mk1": {

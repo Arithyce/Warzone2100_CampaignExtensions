@@ -339,7 +339,7 @@ data		"wrf/cam3/sub3-4.wrf"
 
 
 campaign	CAM_A1
-data		"wrf/vidmem3.wrf"
+data		"wrf/vidmem1.wrf"
 data		"wrf/basic.wrf"
 data		"wrf/cama1.wrf"
 data		"wrf/audio.wrf"
