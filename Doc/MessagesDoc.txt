@@ -1,0 +1,32 @@
+
+Brief-files
+
+`'NAME'`     The name of the line/message data.
+`~0~`        For some kind of debugging.
+`[1|3]`      Something to do with "\base\sequenceaudio". [Set to 1 always]
+`(0-4)`      Number of videos to play in the mission. [Limit is 4]
+`'NAME.OGG'` Video Slot number 1. [Exclude data field if blank]
+`![1|0]`     Something to do with "\base\sequenceaudio". ![Exclude this always]
+`(0-4)`      Number of messages. [Sets how many message fields to check for]
+`'NAME'`     The name of the message. [Leave this field out completely if there is no message]
+`'NAME'`     The name of the message. [Leave this field out completely if there is no message]
+`'NAME'`     The name of the message. [Leave this field out completely if there is no message]
+`'NAME'`     The name of the message. [Leave this field out completely if there is no message]
+`~0~`        For some kind of debugging.
+`-0000-`     NULL [This serves to separate the sections; Exclude if section doesn't exist]
+
+
+Proximity-files
+
+`'NAME'`     The name of the beacon/message.
+`~0~`        For some kind of debugging.
+`'NAME'`     Name of message to print when you click the beacon or enter the area. [Optional]
+`[2|4]`      Number of coordinates.
+`(0-25599)`  x coordinate Min
+`(0-25599)`  y coordinate Min
+`(0-25599)`  x coordinate Max
+`(0-25599)`  y coordinate Max
+`~0~`        For some kind of debugging.
+`'NAME.OGG'` Name of audio file to play when you click the beacon or enter the area. [Optional]
+`(0-3)`      Beacon color; 0 = red; 1 = blue; 2 = green.
+
