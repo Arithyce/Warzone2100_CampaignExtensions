@@ -1,0 +1,9 @@
+/* Campaign Alternative 1 Mission Briefing text */
+
+CAMA1_MSG1			_("OBJECTIVE: Locate and secure the NASDA Base")
+CAMA1_MSG2			_("Establish a base, then search for a Pre-Collapse Base.")
+CAMA1_MSG3			_("This Base contains technology vital for the success of the Ensemble.")
+
+CAMA1A_MSG1			_("RECLAIMER BASE MISSION: Scavenger Raiders") 
+CAMA1A_MSG2			_("Scavenger raiders are approaching our base.")
+CAMA1A_MSG3			_("Defend the base then destroy the Scavenger camp.")

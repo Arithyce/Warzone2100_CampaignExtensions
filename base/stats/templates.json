@@ -30,6 +30,7 @@
 		]
 	},
 	"BaBaCivilian": {
+		"available": true,
 		"body": "B1BaBaPerson01",
 		"id": "BaBaCivilian",
 		"name": "Civilian",
@@ -37,6 +38,7 @@
 		"type": "PERSON"
 	},
 	"BaBaPeople": {
+		"available": true,
 		"body": "B1BaBaPerson01",
 		"id": "BaBaPeople",
 		"name": "Scavenger",
@@ -47,6 +49,7 @@
 		]
 	},
 	"BabaBusCan": {
+		"available": true,
 		"body": "BusBody",
 		"id": "BabaBusCan",
 		"name": "School Bus",
@@ -57,6 +60,7 @@
 		]
 	},
 	"BabaFireCan": {
+		"available": true,
 		"body": "FireBody",
 		"id": "BabaFireCan",
 		"name": "Cannon Fire Truck",
@@ -67,6 +71,7 @@
 		]
 	},
 	"BabaFireTruck": {
+		"available": true,
 		"body": "FireBody",
 		"id": "BabaFireTruck",
 		"name": "Fire Truck",
@@ -77,6 +82,7 @@
 		]
 	},
 	"BabaJeep": {
+		"available": true,
 		"body": "B2JeepBody",
 		"id": "BabaJeep",
 		"name": "Jeep",
@@ -87,6 +93,7 @@
 		]
 	},
 	"BabaCrane": {
+		"available": true,
 		"body": "B2crane",
 		"propulsion": "BaBaProp",
 		"construct": "scavCrane",
@@ -95,6 +102,7 @@
 		"type": "CONSTRUCT"
 	},
 	"BabaPickUp": {
+		"available": false,
 		"body": "B2RKJeepBody",
 		"construct": "Spade1Mk1",
 		"id": "BabaPickUp",
@@ -102,6 +110,7 @@
 		"type": "CONSTRUCT"
 	},
 	"BabaRKJeep": {
+		"available": true,
 		"body": "B2RKJeepBody",
 		"id": "BabaRKJeep",
 		"name": "Rocket Jeep",
@@ -112,6 +121,7 @@
 		]
 	},
 	"BarbarianBuggy": {
+		"available": true,
 		"body": "B3body-sml-buggy01",
 		"id": "BarbarianBuggy",
 		"name": "Buggy",
@@ -122,6 +132,7 @@
 		]
 	},
 	"BarbarianRKBuggy": {
+		"available": true,
 		"body": "B3bodyRKbuggy01",
 		"id": "BarbarianRKBuggy",
 		"name": "Rocket Buggy",
@@ -132,6 +143,7 @@
 		]
 	},
 	"BarbarianTrike": {
+		"available": true,
 		"body": "B4body-sml-trike01",
 		"id": "BarbarianTrike",
 		"name": "Trike",
