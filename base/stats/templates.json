@@ -30,7 +30,7 @@
 		]
 	},
 	"BaBaCivilian": {
-		"available": true,
+		"available": false,
 		"body": "B1BaBaPerson01",
 		"id": "BaBaCivilian",
 		"name": "Civilian",

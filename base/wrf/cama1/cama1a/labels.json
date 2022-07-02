@@ -1,6 +1,5 @@
 {
     "area_0": {
-        "id": "area_0",
         "label": "Factory1",
         "pos1": [
             5760,
@@ -12,7 +11,6 @@
         ]
     },
     "area_1": {
-        "id": "area_1",
         "label": "PlayerBase1",
         "pos1": [
             512,
@@ -24,7 +22,6 @@
         ]
     },
     "area_2": {
-        "id": "area_2",
         "label": "ScavBase",
         "pos1": [
             4864,
@@ -36,7 +33,6 @@
         ]
     },
     "area_3": {
-        "id": "area_3",
         "label": "Group",
         "pos1": [
             3712,
@@ -48,49 +44,19 @@
         ]
     },
     "object_103": {
-        "id": "object_103",
+        "id": "13",
         "label": "ScavFac",
         "player": 7,
         "type": 1
     },
-    "object_46": {
-        "id": "object_46",
-        "label": "ConVeh",
-        "player": 0,
-        "type": 0
-    },
-    "object_60": {
-        "id": "object_60",
-        "label": "Derrick",
-        "player": 7,
-        "type": 1
-    },
     "position_0": {
-        "id": "position_0",
         "label": "PlaBasAtt1",
         "pos": [
             800,
             26011
         ]
     },
-    "position_1": {
-        "id": "position_1",
-        "label": "Oil1",
-        "pos": [
-            14500,
-            18085
-        ]
-    },
-    "position_10": {
-        "id": "position_10",
-        "label": "Oil12",
-        "pos": [
-            1311,
-            20255
-        ]
-    },
     "position_11": {
-        "id": "position_11",
         "label": "start",
         "pos": [
             1017,
@@ -98,75 +64,10 @@
         ]
     },
     "position_12": {
-        "id": "position_12",
         "label": "Assembly",
         "pos": [
             5381,
             27240
-        ]
-    },
-    "position_2": {
-        "id": "position_2",
-        "label": "Oil2",
-        "pos": [
-            13741,
-            21426
-        ]
-    },
-    "position_3": {
-        "id": "position_3",
-        "label": "Oil3",
-        "pos": [
-            13727,
-            22059
-        ]
-    },
-    "position_4": {
-        "id": "position_4",
-        "label": "Oil4",
-        "pos": [
-            13233,
-            25769
-        ]
-    },
-    "position_5": {
-        "id": "position_5",
-        "label": "Oil5",
-        "pos": [
-            15645,
-            30247
-        ]
-    },
-    "position_6": {
-        "id": "position_6",
-        "label": "Oil6",
-        "pos": [
-            11439,
-            22712
-        ]
-    },
-    "position_7": {
-        "id": "position_7",
-        "label": "Oil9",
-        "pos": [
-            8738,
-            17442
-        ]
-    },
-    "position_8": {
-        "id": "position_8",
-        "label": "Oil10",
-        "pos": [
-            9504,
-            16931
-        ]
-    },
-    "position_9": {
-        "id": "position_9",
-        "label": "Oil11",
-        "pos": [
-            5536,
-            20640
         ]
     }
 }

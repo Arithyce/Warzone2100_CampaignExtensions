@@ -1320,5 +1320,239 @@
 		},
 		"size": "LIGHT",
 		"weaponSlots": 1
+	},
+	"BodyA1REC": {
+		"armourHeat": 12,
+		"armourKinetic": 15,
+		"buildPoints": 113,
+		"buildPower": 45,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 49,
+		"id": "BodyA1REC",
+		"model": "drlbod01.pie",
+		"name": "Dolphin",
+		"powerOutput": 7500,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"HalfTrack02": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"HalfTrack03": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"V-Tol": {
+				"left": "prllvtl1.pie",
+				"right": "prlrvtl1.pie",
+				"moving": "fxvtl01.pie"
+			},
+			"V-Tol02": {
+				"left": "prllvtl1.pie",
+				"right": "prlrvtl1.pie",
+				"moving": "fxvtl01.pie"
+			},
+			"V-Tol03": {
+				"left": "prllvtl1.pie",
+				"right": "prlrvtl1.pie",
+				"moving": "fxvtl01.pie"
+			},
+			"hover01": {
+				"left": "prlhov1.pie"
+			},
+			"hover02": {
+				"left": "prlhov1.pie"
+			},
+			"hover03": {
+				"left": "prlhov1.pie"
+			},
+			"tracked01": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"tracked02": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"tracked03": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"wheeled01": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			},
+			"wheeled02": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			},
+			"wheeled03": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 450
+	},
+	"BodyA5REC": {
+		"armourHeat": 18,
+		"armourKinetic": 23,
+		"buildPoints": 188,
+		"buildPower": 75,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 97,
+		"id": "BodyA5REC",
+		"model": "drmbod05.pie",
+		"name": "Orca",
+		"powerOutput": 22500,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"HalfTrack02": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"HalfTrack03": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"V-Tol": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"V-Tol02": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"V-Tol03": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"hover01": {
+				"left": "prmhov1.pie"
+			},
+			"hover02": {
+				"left": "prmhov1.pie"
+			},
+			"hover03": {
+				"left": "prmhov1.pie"
+			},
+			"tracked01": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"tracked02": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"tracked03": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"wheeled01": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			},
+			"wheeled02": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			},
+			"wheeled03": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			}
+		},
+		"size": "MEDIUM",
+		"weaponSlots": 1,
+		"weight": 1500
+	},
+	"BodyA11ABT": {
+		"armourHeat": 27,
+		"armourKinetic": 30,
+		"buildPoints": 263,
+		"buildPower": 105,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 150,
+		"id": "BodyA11ABT",
+		"model": "drhbod11.pie",
+		"name": "Whale",
+		"powerOutput": 30000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"HalfTrack02": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"HalfTrack03": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"V-Tol": {
+				"left": "prhlvtl3.pie",
+				"right": "prhrvtl3.pie",
+				"moving": "fxvtl11.pie"
+			},
+			"V-Tol02": {
+				"left": "prhlvtl3.pie",
+				"right": "prhrvtl3.pie",
+				"moving": "fxvtl11.pie"
+			},
+			"V-Tol03": {
+				"left": "prhlvtl3.pie",
+				"right": "prhrvtl3.pie",
+				"moving": "fxvtl11.pie"
+			},
+			"hover01": {
+				"left": "prhhov1.pie"
+			},
+			"hover02": {
+				"left": "prhhov1.pie"
+			},
+			"hover03": {
+				"left": "prhhov1.pie"
+			},
+			"tracked01": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"tracked02": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"tracked03": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"wheeled01": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			},
+			"wheeled02": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			},
+			"wheeled03": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 1,
+		"weight": 2025
 	}
 }

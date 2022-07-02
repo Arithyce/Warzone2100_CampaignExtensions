@@ -557,7 +557,15 @@ Cyb-BB-Rkt-GROUND		_("Bunker Blaster")
 // New Style Repair Center - replaces all instances of A0RepairCentre
 A0RepairCentre2		_("Repair Center")
 
-// Scavengers
+// Scavenger Weapons
+
+// Scavenger Bodies
+
+// Scavenger Propulsions
+
+// Scavenger Structures
+
+// Scavenger Templates
 
 BabaCrane        _("Construction Vehicle")
 
