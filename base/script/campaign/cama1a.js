@@ -119,8 +119,6 @@ function eventStartLevel()
 		},
 	});
 
-	camMakeGroup("Group")
-
 	camSetFactories({
 		"ScavFac": {
 			assembly: "Assembly",
@@ -128,7 +126,7 @@ function eventStartLevel()
 			data: { pos: "PlaBasAtt1" },
 			groupSize: 8,
 			maxSize: 16,
-			group: { group: "Group" },
+			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 8 : 5)),
 			templates: [
 			cTempl.bloke, cTempl.trike, cTempl.buggy, cTempl.bjeep,
 			cTempl.buscan, cTempl.firecan, cTempl.firetruck ]
