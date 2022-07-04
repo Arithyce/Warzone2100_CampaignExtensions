@@ -1678,7 +1678,8 @@
 		"msgName": "RES_ST_FM1",
 		"name": "Factory Module",
 		"requiredResearch": [
-			"R-Sys-Engineering01"
+			"R-Sys-Engineering01", 
+			"R-Struc-Factory-Light"
 		],
 		"researchPoints": 2400,
 		"researchPower": 75,
@@ -1859,6 +1860,9 @@
 		"keyTopic": 1,
 		"msgName": "RES_POWMD1",
 		"name": "Power Module",
+		"requiredResearch": [
+			"R-Struc-PowerGenerator"
+		],
 		"researchPoints": 1200,
 		"researchPower": 37,
 		"resultStructures": [
@@ -9170,5 +9174,36 @@
 			"BodyA1REC"
 		],
 		"statID": "BodyA1REC"
+	},
+	"R-Struc-Factory-Light": {
+		"iconID": "IMAGE_RES_STRUCTURETECH",
+		"id": "R-Struc-Factory-Light",
+		"msgName": "RES_ST_FL1",
+		"name": "Factory",
+		"redStructures": [
+			"A0BaBaFactory"
+		],
+		"researchPoints": 1000,
+		"researchPower": 50,
+		"resultStructures": [
+			"A0LightFactory"
+		],
+		"statID": "A0LightFactory"
+	},
+	"R-Struc-PowerGenerator": {
+		"iconID": "IMAGE_RES_STRUCTURETECH",
+		"id": "R-Struc-PowerGenerator",
+		"keyTopic": 1,
+		"msgName": "RES_POWGEN",
+		"name": "Power Generator",
+		"redStructures": [
+			"A0BaBaPowerGenerator"
+		],
+		"researchPoints": 800,
+		"researchPower": 30,
+		"resultStructures": [
+			"A0PowerGenerator"
+		],
+		"statID": "A0PowerGenerator"
 	}
 }

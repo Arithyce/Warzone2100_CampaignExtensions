@@ -1,73 +1,55 @@
 {
-    "area_0": {
-        "label": "Factory1",
-        "pos1": [
-            5760,
-            26496
-        ],
-        "pos2": [
-            7040,
-            27264
-        ]
-    },
-    "area_1": {
-        "label": "PlayerBase1",
-        "pos1": [
-            512,
-            25728
-        ],
-        "pos2": [
-            896,
-            26112
-        ]
-    },
-    "area_2": {
-        "label": "ScavBase",
-        "pos1": [
-            4864,
-            25472
-        ],
-        "pos2": [
-            7040,
-            27648
-        ]
-    },
-    "area_3": {
-        "label": "Group",
-        "pos1": [
-            3712,
-            26112
-        ],
-        "pos2": [
-            6784,
-            28800
-        ]
-    },
-    "object_103": {
-        "id": "13",
-        "label": "ScavFac",
-        "player": 7,
-        "type": 1
-    },
-    "position_0": {
-        "label": "PlaBasAtt1",
-        "pos": [
-            800,
-            26011
-        ]
-    },
-    "position_11": {
-        "label": "start",
-        "pos": [
-            1017,
-            31746
-        ]
-    },
-    "position_12": {
-        "label": "Assembly",
-        "pos": [
-            5381,
-            27240
-        ]
-    }
+	"position_0": {
+		"pos": [800, 26011],
+		"label": "PlaBasAtt1"
+	},
+	"position_1": {
+		"pos": [1017, 31746],
+		"label": "start"
+	},
+	"position_2": {
+		"pos": [5381, 27240],
+		"label": "Assembly"
+	},
+	"position_3": {
+		"pos": [5637, 31187],
+		"label": "Assembly0"
+	},
+	"area_0": {
+		"pos1": [4864, 25472],
+		"pos2": [7040, 27648],
+		"label": "ScavBase"
+	},
+	"area_1": {
+		"pos1": [1920, 28800],
+		"pos2": [3328, 30720],
+		"label": "ScoutMSG"
+	},
+	"area_2": {
+		"pos1": [3712, 26112],
+		"pos2": [6784, 28800],
+		"label": "GroupA"
+	},
+	"area_3": {
+		"pos1": [6528, 30848],
+		"pos2": [7296, 31616],
+		"label": "ScavBase0"
+	},
+	"area_4": {
+		"pos1": [384, 25600],
+		"pos2": [1024, 26240],
+		"label": "PlayerBase"
+	},
+	"object_25": {
+		"id": 219,
+		"type": 1,
+		"player": 7,
+		"label": "ScavFac0"
+	},
+	"object_103": {
+		"id": 13,
+		"type": 1,
+		"player": 7,
+		"label": "ScavFac"
+	}
 }
