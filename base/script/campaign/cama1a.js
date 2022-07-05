@@ -1,6 +1,15 @@
 include("script/campaign/libcampaign.js");
 include("script/campaign/templates.js");
 
+function builtDerrick()
+{
+	camManageGroup(camMakeGroup("GroupA", ENEMIES), CAM_ORDER_ATTACK, {
+					pos: "PlaBasAtt1"
+				});
+				camEnableFactory("ScavFac");
+				camPlayVideos({video: "MBA1A_MSG", type: MISS_MSG});
+}
+
 function eventStructureBuilt(structure, droid)
 {
 	if (structure.player === CAM_HUMAN_PLAYER && structure.stattype === RESOURCE_EXTRACTOR)
@@ -11,11 +20,7 @@ function eventStructureBuilt(structure, droid)
 			var obj = objs[d];
 			if (obj.type === STRUCTURE && obj.stattype === RESOURCE_EXTRACTOR)
 			{
-				camManageGroup(camMakeGroup("GroupA", ENEMIES), CAM_ORDER_ATTACK, {
-					pos: "PlaBasAtt1"
-				});
-				camEnableFactory("ScavFac");
-				camPlayVideos({video: "MBA1A_MSG", type: MISS_MSG});
+				camCallOnce("builtDerrick");
 				break;
 			}
 		}
