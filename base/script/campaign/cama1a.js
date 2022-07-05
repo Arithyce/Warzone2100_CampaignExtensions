@@ -1,17 +1,51 @@
 include("script/campaign/libcampaign.js");
 include("script/campaign/templates.js");
 
-const SCAVENGER_RES = [
-	"R-Wpn-MG-Damage01", "R-Wpn-MG-ROF01",
-];
+function builtDerrick()
+{
+	camManageGroup(camMakeGroup("GroupA", ENEMIES), CAM_ORDER_ATTACK, {
+					pos: "PlaBasAtt1"
+				});
+				camEnableFactory("ScavFac");
+				camPlayVideos({video: "MBA1A_MSG", type: MISS_MSG});
+}
+
+function eventStructureBuilt(structure, droid)
+{
+	if (structure.player === CAM_HUMAN_PLAYER && structure.stattype === RESOURCE_EXTRACTOR)
+	{
+		var objs = enumArea("PlayerBase", CAM_HUMAN_PLAYER);
+		for (var d = 0, o = objs.length; d < o; ++d)
+		{
+			var obj = objs[d];
+			if (obj.type === STRUCTURE && obj.stattype === RESOURCE_EXTRACTOR)
+			{
+				camCallOnce("builtDerrick");
+				break;
+			}
+		}
+	}
+}
+
+camAreaEvent("ScoutMSG", function(droid)
+{
+	camPlayVideos({video: "MBA1A_MSG3", type: MISS_MSG});
+	
+	if (difficulty !== HARD && difficulty !== INSANE)
+	{
+		setMissionTime(camChangeOnDiff(camHoursToSeconds(1)));
+	}
+});
+
+
 
 function camEnemyBaseEliminated_scavGroup1()
 {
-	camEnableFactory("ScavFac");
-	camPlayVideos({video: "MBA1A_MSG", type: MISS_MSG});
+	camEnableFactory("ScavFac0");
+	camPlayVideos({video: "MBA1A_MSG4", type: MISS_MSG});
 }
 
-function camEnemyBaseEliminated_scavGroup2()
+function camEnemyBaseEliminated_scavGroup0()
 {
 	camPlayVideos({video: "MBA1A_MSG2", type: MISS_MSG});
 	const StructArti = [
@@ -84,7 +118,6 @@ function eventStartLevel()
 
 	enableBaseStructures();
 	enableStartComponents();
-	camCompleteRequiredResearch(SCAVENGER_RES, 7);
 
 	// Give player briefing.
 	
@@ -99,14 +132,14 @@ function eventStartLevel()
 	}
 	else
 	{
-		setMissionTime(camHoursToSeconds(1));
+		setMissionTime(-1);
 	}
 
 	
 	// Feed libcampaign.js with data to do the rest.
 	camSetEnemyBases({
 		"scavGroup1": {
-			cleanup: "PlayerBase1",
+			cleanup: "PlayerBase",
 			detectMsg: "CA1A_POST0",
 			detectSnd: "pcv375.ogg",
 			eliminateSnd: "pcv391.ogg"
@@ -114,6 +147,12 @@ function eventStartLevel()
 		"scavGroup2": {
 			cleanup: "ScavBase",
 			detectMsg: "CA1A_BASE0",
+			detectSnd: "pcv374.ogg",
+			eliminateSnd: "pcv392.ogg"
+		},
+		"scavGroup0": {
+			cleanup: "ScavBase0",
+			detectMsg: "CA1A_BASE1",
 			detectSnd: "pcv374.ogg",
 			eliminateSnd: "pcv392.ogg"
 		},
@@ -126,10 +165,19 @@ function eventStartLevel()
 			data: { pos: "PlaBasAtt1" },
 			groupSize: 8,
 			maxSize: 16,
-			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 8 : 5)),
+			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 16 : 12)),
 			templates: [
 			cTempl.bloke, cTempl.trike, cTempl.buggy, cTempl.bjeep,
 			cTempl.buscan, cTempl.firecan, cTempl.firetruck ]
+		},
+		"ScavFac0": {
+			assembly: "Assembly0",
+			order: CAM_ORDER_ATTACK,
+			data: { pos: "PlaBasAtt1" },
+			groupSize: 8,
+			maxSize: 16,
+			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 4 : 2)),
+			templates: [ cTempl.bloke ]
 		},
 	});
 }

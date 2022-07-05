@@ -1,14 +1,14 @@
 {
 	"scavCrane": {
-		"buildPoints": 25,
-		"buildPower": 10,
-		"constructPoints": 12,
+		"buildPoints": 30,
+		"buildPower": 7,
+		"constructPoints": 6,
 		"droidType": "DROID_CONSTRUCT",
 		"hitpoints": 35,
 		"id": "scavCrane",
 		"name": "Crane Arm",
 		"sensorModel": "cranearm.pie",
-		"weight": 800
+		"weight": 400
 	},
 	"Spade1Mk1": {
 		"buildPoints": 85,
