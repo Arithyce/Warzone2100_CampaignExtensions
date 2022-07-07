@@ -58,11 +58,9 @@ function camEnemyBaseEliminated_scavGroup0()
 	};
 	makeComponentAvailable("BabaFlame", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("BabaBusCannon", CAM_HUMAN_PLAYER);
-	makeComponentAvailable("BabaMG", CAM_HUMAN_PLAYER);
-	makeComponentAvailable("BaBaLegs", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("FireBody", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("BusBody", CAM_HUMAN_PLAYER);
-	makeComponentAvailable("B1BaBaPerson01", CAM_HUMAN_PLAYER);
+	camCompleteRequiredResearch([ "R-Wpn-BMG2", "R-Wpn-JMG2", "R-Wpn-TMG2", "R-Wpn-BAMG2"], CAM_HUMAN_PLAYER );
 }
 
 function enableBaseStructures()
@@ -90,6 +88,9 @@ function enableStartComponents()
 	makeComponentAvailable("BabaJeepMG", CAM_HUMAN_PLAYER)
 	makeComponentAvailable("B2crane", CAM_HUMAN_PLAYER)
 	makeComponentAvailable("scavCrane", CAM_HUMAN_PLAYER)
+	makeComponentAvailable("BabaMG", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BaBaLegs", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("B1BaBaPerson01", CAM_HUMAN_PLAYER);
 }
 
 changePlayerColour(CAM_HUMAN_PLAYER, 5)
@@ -167,7 +168,7 @@ function eventStartLevel()
 			maxSize: 16,
 			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 16 : 12)),
 			templates: [
-			cTempl.bloke, cTempl.trike, cTempl.buggy, cTempl.bjeep,
+			cTempl.bloketwin, cTempl.trike, cTempl.buggy, cTempl.bjeep,
 			cTempl.buscan, cTempl.firecan, cTempl.firetruck ]
 		},
 		"ScavFac0": {
@@ -177,7 +178,7 @@ function eventStartLevel()
 			groupSize: 8,
 			maxSize: 16,
 			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 4 : 2)),
-			templates: [ cTempl.bloke ]
+			templates: [ cTempl.bloketwin ]
 		},
 	});
 }

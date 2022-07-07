@@ -1708,20 +1708,20 @@
 	"LookOutTower": {
 		"armour": 5,
 		"breadth": 1,
-		"buildPoints": 5,
-		"buildPower": 5,
+		"buildPoints": 10,
+		"buildPower": 2,
 		"ecmID": "ZNULLECM",
 		"height": 2,
 		"hitpoints": 200,
 		"id": "LookOutTower",
-		"name": "Look-Out Tower",
+		"name": "Scav Look-Out Tower",
 		"sensorID": "BaBaSensor",
 		"strength": "MEDIUM",
 		"structureModel": [
 			"blbrlook.PIE"
 		],
 		"thermal": 5,
-		"type": "CORNER WALL",
+		"type": "DEFENSE",
 		"width": 1
 	},
 	"NEXUSCWall": {

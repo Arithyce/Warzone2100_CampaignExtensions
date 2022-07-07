@@ -2825,8 +2825,8 @@
 		"msgName": "RES_MG1MK1",
 		"name": "Machinegun",
 		"redComponents": [
-			"BabaMG", "BabaTrikeMG", "BabaBuggyMG", 
-			"BabaJeepMG", "BabaBusCannon", 
+			"BabaHeavyMG", "BabaTrikeHeavyMG", "BabaBuggyHeavyMG", 
+			"BabaJeepHeavyMG", "BabaBusCannon", 
 			"BabaFlame", "BabaRocket"
 		],
 		"researchPoints": 60,
@@ -9156,6 +9156,134 @@
 		],
 		"statID": "RailGun3Mk1"
 	
+	},
+	"R-Wpn-BMG2": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-BMG2",
+		"keyTopic": 1,
+		"msgName": "RES_MG2MK1",
+		"name": "Buggy Twin MG",
+		"redComponents": [
+			"BabaBuggyMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaBuggyTwinMG"
+		],
+		"statID": "BabaBuggyTwinMG"
+	},
+	"R-Wpn-JMG2": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-JMG2",
+		"keyTopic": 1,
+		"msgName": "RES_MG2MK1",
+		"name": "Jeep Twin MG",
+		"redComponents": [
+			"BabaJeepMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaJeepTwinMG"
+		],
+		"statID": "BabaJeepTwinMG"
+	},
+	"R-Wpn-TMG2": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-TMG2",
+		"keyTopic": 1,
+		"msgName": "RES_MG2MK1",
+		"name": "Trike Twin MG",
+		"redComponents": [
+			"BabaTrikeMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaTrikeTwinMG"
+		],
+		"statID": "BabaTrikeTwinMG"
+	},
+	"R-Wpn-BAMG2": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-BAMG2",
+		"keyTopic": 1,
+		"msgName": "RES_MG2MK1",
+		"name": "BaBa Twin MG",
+		"redComponents": [
+			"BabaMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaTwinMG"
+		],
+		"statID": "BabaTwinMG"
+	},
+	"R-Wpn-BMG3": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-BMG3",
+		"keyTopic": 1,
+		"msgName": "RES_MG3MK1",
+		"name": "Buggy Heavy MG",
+		"redComponents": [
+			"BabaBuggyTwinMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaBuggyHeavyMG"
+		],
+		"statID": "BabaBuggyHeavyMG"
+	},
+	"R-Wpn-BAMG3": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-BAMG3",
+		"keyTopic": 1,
+		"msgName": "RES_MG3MK1",
+		"name": "BaBa Heavy MG",
+		"redComponents": [
+			"BabaTwinMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaHeavyMG"
+		],
+		"statID": "BabaHeavyMG"
+	},
+	"R-Wpn-JMG3": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-JMG3",
+		"keyTopic": 1,
+		"msgName": "RES_MG3MK1",
+		"name": "Jeep Heavy MG",
+		"redComponents": [
+			"BabaJeepTwinMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaJeepHeavyMG"
+		],
+		"statID": "BabaJeepHeavyMG"
+	},
+	"R-Wpn-TMG3": {
+		"iconID": "IMAGE_RES_WEAPONTECH",
+		"id": "R-Wpn-TMG3",
+		"keyTopic": 1,
+		"msgName": "RES_MG3MK1",
+		"name": "Trike Heavy MG",
+		"redComponents": [
+			"BabaTrikeTwinMG"
+		],
+		"researchPoints": 1,
+		"researchPower": 1,
+		"resultComponents": [
+			"BabaTrikeHeavyMG"
+		],
+		"statID": "BabaTrikeHeavyMG"
 	},
 	"R-Vehicle-BodyA01": {
 		"iconID": "IMAGE_RES_DROIDTECH",

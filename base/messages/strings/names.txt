@@ -569,7 +569,11 @@ A0RepairCentre2		_("Repair Center")
 
 BabaCrane        _("Construction Vehicle")
 
-BaBaPeople       _("Scavenger")
+BaBaPeople       _("MG Scavenger")
+
+BaBaPeople2      _("Twin MG Scavenger")
+
+BaBaPeople3      _("Heavy MG Scavenger")
 
 BabaBusCan       _("School Bus")
 
@@ -577,15 +581,27 @@ BabaFireCan      _("Cannon Fire Truck")
 
 BabaFireTruck    _("Fire Truck")
 
-BabaJeep         _("Jeep")
+BabaJeep         _("MG Jeep")
+
+BabaJeep2        _("Twin MG Jeep")
+
+BabaJeep3        _("Heavy MG Jeep")
 
 BabaRKJeep       _("Rocket Jeep")
 
-BarbarianBuggy   _("Buggy")
+BarbarianBuggy   _("MG Buggy")
+
+BarbarianBuggy2  _("Twin MG Buggy")
+
+BarbarianBuggy3  _("Heavy MG Buggy")
 
 BarbarianRKBuggy _("Rocket Buggy")
 
-BarbarianTrike   _("Trike")
+BarbarianTrike   _("MG Trike")
+
+BarbarianTrike2  _("Twin MG Trike")
+
+BarbarianTrike3  _("Heavy MG Trike")
 
 
 
