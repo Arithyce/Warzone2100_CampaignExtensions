@@ -8,18 +8,34 @@ CAMA1_MSG3			_("This Base contains technology vital for the success of the Ensem
 // MBA1A_MSG/Message 3
 CAMA1A_MSG1			_("RECLAIMER BASE MISSION: Scavenger Raiders:") 
 CAMA1A_MSG2			_("Scavenger raiders are approaching our base.")
-CAMA1A_MSG3			_("Defend the base then destroy the Scavenger camp.")
+CAMA1A_MSG3			_("Defend the base then destroy the Scavenger camps.")
 
 // MBA1A_MSG2/Message 4
-CAMA1A_MSG4         _("New structures are available")
-CAMA1A_MSG5         _("New units are available")
+CAMA1A_MSG4			_("New structures are available.")
+CAMA1A_MSG5			_("New units are available.")
 
 // MBA1A_MSG3/Message 1
-CAMA1A_MSG6         _("Our scouts have found a location for our base.")
-CAMA1A_MSG7         _("Head down the northern path ahead.")
-CAMA1A_MSG8         _("And then destroy the scavenger outpost and build your base.")
+CAMA1A_MSG6			_("Our scouts have found a location for our base.")
+CAMA1A_MSG7			_("Head up the northern path ahead.")
+CAMA1A_MSG8			_("And then destroy the scavenger outpost and build your base.")
 
 // MBA1A_MSG4/Message 2
-CAMA1A_MSG9         _("The next target should be the scavenger base to the south.")
-CAMA1A_MSG10        _("The scavengers in this area are unusually advanced.")
-CAMA1A_MSG11        _("It is likely the remains of their base can be useful to us.")
+CAMA1A_MSG9			_("Our next target should be the scavenger base to the south.")
+CAMA1A_MSG10		_("It is likely that we can acquire superior technologies from this base.")
+CAMA1A_MSG11		_("The scavengers in this area are unusually advanced and dangerous.")
+
+// Mission 2
+// MBA1B_MSG/Message 1
+CAMA1B_MSG1			_("Commander, it is time for you to begin your search for the NASDA Base.")
+CAMA1B_MSG2			_("We do not know the Bases exact location, so you must search for it.")
+CAMA1B_MSG3			_("Be advised, the Raider threat in this sector is extreme.")
+
+// MBA1B_MSG1/Message 2
+CAMA1B_MSG4			_("New structures are available.")
+CAMA1B_MSG5			_("New units are available.")
+
+// MBA1B_MSG2/Message 3
+CAMA1B_MSG6			_("Commander, there is a functional Research Facility in your vicinity.")
+CAMA1B_MSG7			_("Get your units close to this Research Facility to capture it.")
+CAMA1B_MSG8			_("Once captured, begin searching the Base for Artifacts and research them.")
+CAMA1B_MSG9			_("Other structures may be salvageable, search the Base and capture them")

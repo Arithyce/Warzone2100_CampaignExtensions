@@ -8,7 +8,7 @@ BARBASE_MSG			_("Scavenger Outpost")
 BARFORT_MSG         _("Scavenger Base")
 POWRES_MSG			_("Power Resource")
 ART_MSG				_("Unknown Artifact")
-POWSURGE_MSG			_("Source of Power Surge")
+POWSURGE_MSG		_("Source of Power Surge")
 
 /* LZ stuff */
 LZ_MSG				_("Landing Zone")

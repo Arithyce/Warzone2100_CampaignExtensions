@@ -351,6 +351,11 @@ dataset		CAM_A1
 game		"wrf/cama1/cama1a.gam"
 data		"wrf/cama1/cama1a.wrf"
 
+expand		CAM_A1B
+dataset		CAM_A1
+game		"wrf/cama1/cama1b.gam"
+data		"wrf/cama1/cama1b.wrf"
+
 
 /********************************************************/
 /* fast play 						                    */

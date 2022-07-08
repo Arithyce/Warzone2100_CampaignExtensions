@@ -162,6 +162,7 @@ nxmpulsev: { body: "Body7ABT", prop: "V-Tol02", weap: "Laser2PULSE-VTOL" },
 // CAM_A1
 firetruck: { body: "FireBody", prop: "BaBaProp", weap: "BabaFlame" },
 crane: { body: "B2crane", prop: "BaBaProp", weap: "scavCrane" },
+blokerpg: { body: "B1BaBaPerson01", prop: "BaBaLegs", weap: "BabaRPG" },
 
 
 ////////////////////////////////////////////////////////////////////////////////

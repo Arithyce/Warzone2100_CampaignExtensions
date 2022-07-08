@@ -4,10 +4,10 @@ include("script/campaign/templates.js");
 function builtDerrick()
 {
 	camManageGroup(camMakeGroup("GroupA", ENEMIES), CAM_ORDER_ATTACK, {
-					pos: "PlaBasAtt1"
-				});
-				camEnableFactory("ScavFac");
-				camPlayVideos({video: "MBA1A_MSG", type: MISS_MSG});
+		pos: "PlaBasAtt1"
+		});
+		camEnableFactory("ScavFac");
+		camPlayVideos({video: "MBA1A_MSG", type: MISS_MSG});
 }
 
 function eventStructureBuilt(structure, droid)
@@ -99,7 +99,7 @@ function eventStartLevel()
 	const PLAYER_POWER = 0;
 	var startpos = getObject("start");
 
-	camSetStandardWinLossConditions(CAM_VICTORY_STANDARD, "CAM_OUT");
+	camSetStandardWinLossConditions(CAM_VICTORY_STANDARD, "CAM_A1B");
 
 	centreView(startpos.x, startpos.y);
 
@@ -118,6 +118,11 @@ function eventStartLevel()
 
 	enableBaseStructures();
 	enableStartComponents();
+	
+	camUpgradeOnMapTemplates(cTempl.bloke, cTempl.bloketwin, SCAV_7);
+	camUpgradeOnMapTemplates(cTempl.trike, cTempl.triketwin, SCAV_7);
+	camUpgradeOnMapTemplates(cTempl.buggy, cTempl.buggytwin, SCAV_7);
+	camUpgradeOnMapTemplates(cTempl.bjeep, cTempl.bjeeptwin, SCAV_7);
 
 	// Give player briefing.
 	
@@ -163,19 +168,23 @@ function eventStartLevel()
 			assembly: "Assembly",
 			order: CAM_ORDER_ATTACK,
 			data: { pos: "PlaBasAtt1" },
-			groupSize: 8,
-			maxSize: 16,
-			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 16 : 12)),
+			groupSize: 7,
+			maxSize: 14,
+			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 18 : 14)),
 			templates: [
+<<<<<<< Updated upstream
 			cTempl.bloke, cTempl.trike, cTempl.buggy, cTempl.bjeep,
+=======
+			cTempl.bloketwin, cTempl.triketwin, cTempl.buggytwin, cTempl.bjeeptwin,
+>>>>>>> Stashed changes
 			cTempl.buscan, cTempl.firecan, cTempl.firetruck ]
 		},
 		"ScavFac0": {
 			assembly: "Assembly0",
 			order: CAM_ORDER_ATTACK,
 			data: { pos: "PlaBasAtt1" },
-			groupSize: 8,
-			maxSize: 16,
+			groupSize: 6,
+			maxSize: 12,
 			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 4 : 2)),
 			templates: [ cTempl.bloke ]
 		},

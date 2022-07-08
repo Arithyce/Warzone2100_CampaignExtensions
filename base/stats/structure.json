@@ -2945,5 +2945,72 @@
 		"thermal": 12,
 		"type": "DEFENSE",
 		"width": 3
+	},
+	"A0Sat-linkCentre": {
+		"armour": 12,
+		"breadth": 2,
+		"buildPoints": 1250,
+		"buildPower": 1000,
+		"height": 3,
+		"hitpoints": 1600,
+		"id": "A0Sat-linkCentre",
+		"name": "Satellite Uplink Center",
+		"sensorID": "UplinkSensor",
+		"strength": "MEDIUM",
+		"structureModel": [
+			"miupbase.PIE"
+		],
+		"thermal": 12,
+		"type": "SAT UPLINK",
+		"userLimits": [
+			0,
+			1,
+			1
+		],
+		"width": 2
+	},
+	"A0HardcreteMk1Gate": {
+		"armour": 15,
+		"breadth": 1,
+		"buildPoints": 250,
+		"buildPower": 75,
+		"height": 2,
+		"hitpoints": 700,
+		"id": "A0HardcreteMk1Gate",
+		"name": "Hardcrete Gate",
+		"strength": "HARD",
+		"structureModel": [
+			"blgateh.pie",
+			"blgateh_x.pie",
+			"blgateh_t.pie",
+			"blgateh_l.pie"
+		],
+		"thermal": 15,
+		"type": "GATE",
+		"width": 1
+	"A0LasSatCommand": {
+		"armour": 16,
+		"breadth": 2,
+		"buildPoints": 2500,
+		"buildPower": 1000,
+		"height": 2,
+		"hitpoints": 1000,
+		"id": "A0LasSatCommand",
+		"name": "Laser Satellite Command Post",
+		"strength": "MEDIUM",
+		"structureModel": [
+			"milasbas.pie"
+		],
+		"thermal": 16,
+		"type": "LASSAT",
+		"userLimits": [
+			0,
+			1,
+			1
+		],
+		"weapons": [
+			"LasSat"
+		],
+		"width": 2
 	}
 }

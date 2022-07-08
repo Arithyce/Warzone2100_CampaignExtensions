@@ -571,6 +571,8 @@ BabaCrane        _("Construction Vehicle")
 
 BaBaPeople       _("Scavenger")
 
+BaBaPeopleR1     _("RPG Scavenger")
+
 BabaBusCan       _("School Bus")
 
 BabaFireCan      _("Cannon Fire Truck")

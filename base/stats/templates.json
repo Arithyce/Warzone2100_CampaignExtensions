@@ -48,6 +48,42 @@
 			"BabaMG"
 		]
 	},
+<<<<<<< Updated upstream
+=======
+	"BaBaPeople2": {
+		"available": true,
+		"body": "B1BaBaPerson01",
+		"id": "BaBaPeople2",
+		"name": "Twin MG Scavenger",
+		"propulsion": "BaBaLegs",
+		"type": "PERSON",
+		"weapons": [
+			"BabaTwinMG"
+		]
+	},
+	"BaBaPeople3": {
+		"available": true,
+		"body": "B1BaBaPerson01",
+		"id": "BaBaPeople3",
+		"name": "Heavy MG Scavenger",
+		"propulsion": "BaBaLegs",
+		"type": "PERSON",
+		"weapons": [
+			"BabaHeavyMG"
+		]
+	},
+	"BaBaPeopleR1": {
+		"available": true,
+		"body": "B1BaBaPerson01",
+		"id": "BaBaPeopleR1",
+		"name": "RPG Scavenger",
+		"propulsion": "BaBaLegs",
+		"type": "PERSON",
+		"weapons": [
+			"BabaRPG"
+		]
+	},
+>>>>>>> Stashed changes
 	"BabaBusCan": {
 		"available": true,
 		"body": "BusBody",

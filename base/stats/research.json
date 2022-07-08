@@ -1267,11 +1267,6 @@
 		"keyTopic": 1,
 		"msgName": "RES_DF_HCW1",
 		"name": "Hardcrete",
-		"redStructures": [
-			"GuardTower1MG",
-			"GuardTower3",
-			"GuardTower4"
-		],
 		"requiredResearch": [
 			"R-Sys-Engineering01"
 		],
@@ -1279,9 +1274,7 @@
 		"researchPower": 18,
 		"resultStructures": [
 			"A0HardcreteMk1Wall",
-			"A0HardcreteMk1CWall",
-			"GuardTower3H",
-			"GuardTower4H"
+			"A0HardcreteMk1CWall"
 		],
 		"statID": "A0HardcreteMk1Wall"
 	},
@@ -1401,6 +1394,11 @@
 		"id": "R-Defense-Tower01",
 		"msgName": "RES_TOWER1",
 		"name": "Machinegun Guard Tower",
+		"redStructures": [
+			"A0BaBaBunker", "A0BaBaFlameTower", "A0BaBaGunTower",
+			"A0BaBaGunTowerEND", "A0BaBaMortarPit", "A0BaBaRocketPit",
+			"A0BaBaRocketPitAT", "A0CannonTower"
+		],
 		"requiredResearch": [
 			"R-Wpn-MG1Mk1",
 			"R-Sys-Engineering01"
@@ -1646,7 +1644,8 @@
 		"msgName": "RES_ST_CR1",
 		"name": "Command Relay Post",
 		"requiredResearch": [
-			"R-Sys-Sensor-Tower01"
+			"R-Sys-Sensor-Tower01",
+			"R-Struc-CommandCenter"
 		],
 		"researchPoints": 1200,
 		"researchPower": 37,
@@ -1900,7 +1899,8 @@
 		"msgName": "RES_ST_RM1",
 		"name": "Research Module",
 		"requiredResearch": [
-			"R-Struc-CommandRelay"
+			"R-Struc-CommandRelay",
+			"R-Struc-ResearchFacility"
 		],
 		"researchPoints": 1200,
 		"researchPower": 37,
@@ -2346,8 +2346,11 @@
 		"redComponents": [
 			"BaBaLegs", "BaBaProp"
 		],
-		"researchPoints": 1200,
-		"researchPower": 37,
+		"requiredResearch": [
+			"R-Struc-Factory-Light"
+		],
+		"researchPoints": 500,
+		"researchPower": 50,
 		"resultComponents": [
 			"wheeled01"
 		],
@@ -2825,12 +2828,21 @@
 		"msgName": "RES_MG1MK1",
 		"name": "Machinegun",
 		"redComponents": [
+<<<<<<< Updated upstream
 			"BabaMG", "BabaTrikeMG", "BabaBuggyMG", 
 			"BabaJeepMG", "BabaBusCannon", 
 			"BabaFlame", "BabaRocket"
+=======
+			"BabaHeavyMG", "BabaTrikeHeavyMG", "BabaBuggyHeavyMG", 
+			"BabaJeepHeavyMG", "BabaBusCannon", 
+			"BabaFlame", "BabaRocket", "BabaRPG"
+>>>>>>> Stashed changes
 		],
-		"researchPoints": 60,
-		"researchPower": 1,
+		"requiredResearch": [
+			"R-Struc-Factory-Light"
+		],
+		"researchPoints": 500,
+		"researchPower": 50,
 		"resultComponents": [
 			"MG1Mk1"
 		],
@@ -9168,8 +9180,11 @@
 			"B2crane", "B2RKJeepBody", 
 			"B3bodyRKbuggy01", "B3body-sml-buggy01"
 		],
-		"researchPoints": 1000,
-		"researchPower": 32,
+		"requiredResearch": [
+			"R-Struc-Factory-Light"
+		],
+		"researchPoints": 500,
+		"researchPower": 50,
 		"resultComponents": [
 			"BodyA1REC"
 		],
@@ -9184,7 +9199,7 @@
 			"A0BaBaFactory"
 		],
 		"researchPoints": 1000,
-		"researchPower": 50,
+		"researchPower": 100,
 		"resultStructures": [
 			"A0LightFactory"
 		],
@@ -9194,16 +9209,42 @@
 		"iconID": "IMAGE_RES_STRUCTURETECH",
 		"id": "R-Struc-PowerGenerator",
 		"keyTopic": 1,
-		"msgName": "RES_POWGEN",
+		"msgName": "RES_ST_POWGEN",
 		"name": "Power Generator",
 		"redStructures": [
 			"A0BaBaPowerGenerator"
 		],
-		"researchPoints": 800,
-		"researchPower": 30,
+		"researchPoints": 1000,
+		"researchPower": 100,
 		"resultStructures": [
 			"A0PowerGenerator"
 		],
 		"statID": "A0PowerGenerator"
+	},
+	"R-Struc-CommandCenter": {
+		"iconID": "IMAGE_RES_STRUCTURETECH",
+		"id": "R-Struc-CommandCenter",
+		"keyTopic": 1,
+		"msgName": "RES_ST_COMCEN",
+		"name": "Command Center",
+		"researchPoints": 1000,
+		"researchPower": 100,
+		"resultStructures": [
+			"A0CommandCentre"
+		],
+		"statID": "A0CommandCentre"
+	},
+	"R-Struc-ResearchFacility": {
+		"iconID": "IMAGE_RES_STRUCTURETECH",
+		"id": "R-Struc-ResearchFacility",
+		"keyTopic": 1,
+		"msgName": "RES_ST_RESLAB",
+		"name": "Command Center",
+		"researchPoints": 1000,
+		"researchPower": 100,
+		"resultStructures": [
+			"A0ResearchFacility"
+		],
+		"statID": "A0ResearchFacility"
 	}
 }
