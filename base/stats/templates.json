@@ -48,8 +48,6 @@
 			"BabaMG"
 		]
 	},
-<<<<<<< Updated upstream
-=======
 	"BaBaPeople2": {
 		"available": true,
 		"body": "B1BaBaPerson01",
@@ -83,7 +81,6 @@
 			"BabaRPG"
 		]
 	},
->>>>>>> Stashed changes
 	"BabaBusCan": {
 		"available": true,
 		"body": "BusBody",
@@ -128,6 +125,28 @@
 			"BabaJeepMG"
 		]
 	},
+	"BabaJeep2": {
+		"available": true,
+		"body": "B2JeepBody",
+		"id": "BabaJeep2",
+		"name": "Twin MG Jeep",
+		"propulsion": "BaBaProp",
+		"type": "DROID",
+		"weapons": [
+			"BabaJeepTwinMG"
+		]
+	},
+	"BabaJeep3": {
+		"available": true,
+		"body": "B2JeepBody",
+		"id": "BabaJeep3",
+		"name": "Heavy MG Jeep",
+		"propulsion": "BaBaProp",
+		"type": "DROID",
+		"weapons": [
+			"BabaJeepHeavyMG"
+		]
+	},
 	"BabaCrane": {
 		"available": true,
 		"body": "B2crane",
@@ -167,6 +186,28 @@
 			"BabaBuggyMG"
 		]
 	},
+	"BarbarianBuggy2": {
+		"available": true,
+		"body": "B3body-sml-buggy01",
+		"id": "BarbarianBuggy2",
+		"name": "Twin MG Buggy",
+		"propulsion": "BaBaProp",
+		"type": "DROID",
+		"weapons": [
+			"BabaBuggyTwinMG"
+		]
+	},
+	"BarbarianBuggy3": {
+		"available": true,
+		"body": "B3body-sml-buggy01",
+		"id": "BarbarianBuggy3",
+		"name": "Heavy MG Buggy",
+		"propulsion": "BaBaProp",
+		"type": "DROID",
+		"weapons": [
+			"BabaBuggyHeavyMG"
+		]
+	},
 	"BarbarianRKBuggy": {
 		"available": true,
 		"body": "B3bodyRKbuggy01",
@@ -187,6 +228,28 @@
 		"type": "DROID",
 		"weapons": [
 			"BabaTrikeMG"
+		]
+	},
+	"BarbarianTrike2": {
+		"available": true,
+		"body": "B4body-sml-trike01",
+		"id": "BarbarianTrike2",
+		"name": "Twin MG Trike",
+		"propulsion": "BaBaProp",
+		"type": "DROID",
+		"weapons": [
+			"BabaTrikeTwinMG"
+		]
+	},
+	"BarbarianTrike3": {
+		"available": true,
+		"body": "B4body-sml-trike01",
+		"id": "BarbarianTrike3",
+		"name": "Heavy MG Trike",
+		"propulsion": "BaBaProp",
+		"type": "DROID",
+		"weapons": [
+			"BabaTrikeHeavyMG"
 		]
 	},
 	"CO-H-COM-H": {

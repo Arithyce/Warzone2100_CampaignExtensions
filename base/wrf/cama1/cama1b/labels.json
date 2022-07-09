@@ -195,10 +195,10 @@
 		"label": "resarti"
 	},
 	"object_342": {
-		"id": 303
-		"type": 1
-		"player": 7
-		"label": "ScavFac5
+		"id": 303,
+		"type": 1,
+		"player": 7,
+		"label": "ScavFac5"
 	},
 	"object_349": {
 		"id": 368,
@@ -213,9 +213,9 @@
 		"label": "preqres3"
 	},
 	"object_355": {
-		"id": 361
-		"type": 1
-		"player": 4
+		"id": 361,
+		"type": 1,
+		"player": 4,
 		"label": "facarti"
 	},
 	"object_356": {

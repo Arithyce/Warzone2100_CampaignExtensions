@@ -1,6 +1,35 @@
 include("script/campaign/libcampaign.js");
 include("script/campaign/templates.js");
 
+function eventChat(from, to, message)
+{
+	switch (message)
+	{
+		case "techa":
+			enableStructure("A0BaBaFlameTower", CAM_HUMAN_PLAYER);
+			enableStructure("A0CannonTower", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("BabaFlame", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("BabaBusCannon", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("FireBody", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("BusBody", CAM_HUMAN_PLAYER);
+			camCompleteRequiredResearch([ "R-Wpn-BMG2", "R-Wpn-JMG2", "R-Wpn-TMG2", "R-Wpn-BAMG2"], CAM_HUMAN_PLAYER );
+			break;
+		case "techo":
+			enableStructure("A0BaBaFlameTower", CAM_HUMAN_PLAYER);
+			enableStructure("A0CannonTower", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("BabaFlame", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("BabaBusCannon", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("FireBody", CAM_HUMAN_PLAYER);
+			makeComponentAvailable("BusBody", CAM_HUMAN_PLAYER);
+			camCompleteRequiredResearch([ "R-Wpn-BMG2", "R-Wpn-JMG2", "R-Wpn-TMG2", "R-Wpn-BAMG2"], CAM_HUMAN_PLAYER );
+			setPower(playerPower(CAM_HUMAN_PLAYER) + 1000);
+			loadLevel("cama1b");
+			break;
+		default:
+			return;
+	}
+}
+
 function builtDerrick()
 {
 	camManageGroup(camMakeGroup("GroupA", ENEMIES), CAM_ORDER_ATTACK, {
@@ -48,81 +77,62 @@ function camEnemyBaseEliminated_scavGroup1()
 function camEnemyBaseEliminated_scavGroup0()
 {
 	camPlayVideos({video: "MBA1A_MSG2", type: MISS_MSG});
-	const StructArti = [
-		"A0BaBaFlameTower", "A0CannonTower",
-	];
-	
-	for (let s = 0; s < StructArti.length; ++s)
-	{
-		enableStructure(StructArti[s], CAM_HUMAN_PLAYER);
-	};
+	enableStructure("A0BaBaFlameTower", CAM_HUMAN_PLAYER);
+	enableStructure("A0CannonTower", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("BabaFlame", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("BabaBusCannon", CAM_HUMAN_PLAYER);
-	makeComponentAvailable("BabaMG", CAM_HUMAN_PLAYER);
-	makeComponentAvailable("BaBaLegs", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("FireBody", CAM_HUMAN_PLAYER);
 	makeComponentAvailable("BusBody", CAM_HUMAN_PLAYER);
-	makeComponentAvailable("B1BaBaPerson01", CAM_HUMAN_PLAYER);
+	camCompleteRequiredResearch([ "R-Wpn-BMG2", "R-Wpn-JMG2", "R-Wpn-TMG2", "R-Wpn-BAMG2"], CAM_HUMAN_PLAYER );
 }
 
 function enableBaseStructures()
 {
-	const STRUCTS = [
-		"A0BaBaPowerGenerator", "A0ResourceExtractor",
-		"A0BaBaFactory", "A0BaBaGunTower", "A0BaBaGunTowerEND",
-		"A0BaBaHorizontalWall", "A0BabaCornerWall", "LookOutTower",
-	];
-
-	for (let i = 0; i < STRUCTS.length; ++i)
-	{
-		enableStructure(STRUCTS[i], CAM_HUMAN_PLAYER);
-	}
+	enableStructure("A0BaBaPowerGenerator", CAM_HUMAN_PLAYER);
+	enableStructure("A0ResourceExtractor", CAM_HUMAN_PLAYER);
+	enableStructure("A0BaBaFactory", CAM_HUMAN_PLAYER);
+	enableStructure("A0BaBaGunTower", CAM_HUMAN_PLAYER);
+	enableStructure("A0BaBaGunTowerEND", CAM_HUMAN_PLAYER);
+	enableStructure("A0BaBaHorizontalWall", CAM_HUMAN_PLAYER);
+	enableStructure("A0BabaCornerWall", CAM_HUMAN_PLAYER);
+	enableStructure("LookOutTower", CAM_HUMAN_PLAYER);
 }
 
 function enableStartComponents()
 {
-	makeComponentAvailable("B4body-sml-trike01", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("B3body-sml-buggy01", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("B2JeepBody", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("BaBaProp", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("BabaTrikeMG", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("BabaBuggyMG", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("BabaJeepMG", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("B2crane", CAM_HUMAN_PLAYER)
-	makeComponentAvailable("scavCrane", CAM_HUMAN_PLAYER)
+	makeComponentAvailable("B4body-sml-trike01", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("B3body-sml-buggy01", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("B2JeepBody", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BaBaProp", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BabaTrikeMG", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BabaBuggyMG", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BabaJeepMG", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("B2crane", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("scavCrane", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BabaMG", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("BaBaLegs", CAM_HUMAN_PLAYER);
+	makeComponentAvailable("B1BaBaPerson01", CAM_HUMAN_PLAYER);
 }
 
-changePlayerColour(CAM_HUMAN_PLAYER, 5)
+changePlayerColour(CAM_HUMAN_PLAYER, 5);
 
 function eventStartLevel()
 {
-	const PLAYER_POWER = 0;
 	var startpos = getObject("start");
 
 	camSetStandardWinLossConditions(CAM_VICTORY_STANDARD, "CAM_A1B");
 
 	centreView(startpos.x, startpos.y);
 
-	if (difficulty === HARD)
-	{
-		setPower(0, CAM_HUMAN_PLAYER);
-	}
-	else if (difficulty === INSANE)
-	{
-		setPower(0, CAM_HUMAN_PLAYER);
-	}
-	else
-	{
-		setPower(PLAYER_POWER, CAM_HUMAN_PLAYER);
-	}
+	setPower(0, CAM_HUMAN_PLAYER);
 
 	enableBaseStructures();
 	enableStartComponents();
 	
-	camUpgradeOnMapTemplates(cTempl.bloke, cTempl.bloketwin, SCAV_7);
-	camUpgradeOnMapTemplates(cTempl.trike, cTempl.triketwin, SCAV_7);
-	camUpgradeOnMapTemplates(cTempl.buggy, cTempl.buggytwin, SCAV_7);
-	camUpgradeOnMapTemplates(cTempl.bjeep, cTempl.bjeeptwin, SCAV_7);
+	camUpgradeOnMapTemplates(cTempl.bloke, cTempl.bloketwin, 7);
+	camUpgradeOnMapTemplates(cTempl.trike, cTempl.triketwin, 7);
+	camUpgradeOnMapTemplates(cTempl.buggy, cTempl.buggytwin, 7);
+	camUpgradeOnMapTemplates(cTempl.bjeep, cTempl.bjeeptwin, 7);
 
 	// Give player briefing.
 	
@@ -172,11 +182,7 @@ function eventStartLevel()
 			maxSize: 14,
 			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 18 : 14)),
 			templates: [
-<<<<<<< Updated upstream
-			cTempl.bloke, cTempl.trike, cTempl.buggy, cTempl.bjeep,
-=======
 			cTempl.bloketwin, cTempl.triketwin, cTempl.buggytwin, cTempl.bjeeptwin,
->>>>>>> Stashed changes
 			cTempl.buscan, cTempl.firecan, cTempl.firetruck ]
 		},
 		"ScavFac0": {
@@ -186,7 +192,7 @@ function eventStartLevel()
 			groupSize: 6,
 			maxSize: 12,
 			throttle: camChangeOnDiff(camSecondsToMilliseconds((difficulty === EASY || difficulty === MEDIUM) ? 4 : 2)),
-			templates: [ cTempl.bloke ]
+			templates: [ cTempl.bloketwin ]
 		},
 	});
 }

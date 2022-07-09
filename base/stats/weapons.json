@@ -44,9 +44,10 @@
 		"weight": 10000
 	},
 	"BabaBuggyHeavyMG": {
-		"buildPoints": 10,
-		"buildPower": 1,
+		"buildPoints": 30,
+		"buildPower": 7,
 		"damage": 18,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 7,
@@ -80,6 +81,7 @@
 		"buildPoints": 10,
 		"buildPower": 1,
 		"damage": 10,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 5,
@@ -110,9 +112,10 @@
 		"weight": 1
 	},
 	"BabaBuggyTwinMG": {
-		"buildPoints": 10,
-		"buildPower": 1,
+		"buildPoints": 20,
+		"buildPower": 5,
 		"damage": 14,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 6,
@@ -146,6 +149,7 @@
 		"buildPoints": 10,
 		"buildPower": 1,
 		"damage": 20,
+		"designable": 0,
 		"effectSize": 25,
 		"explosionWav": "smlexpl.ogg",
 		"facePlayer": 1,
@@ -183,6 +187,7 @@
 		"buildPoints": 1,
 		"buildPower": 1,
 		"damage": 20,
+		"designable": 0,
 		"effectSize": 25,
 		"explosionWav": "smlexpl.ogg",
 		"facePlayer": 1,
@@ -218,6 +223,7 @@
 		"buildPoints": 10,
 		"buildPower": 2,
 		"damage": 8,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"fireOnMove": 1,
@@ -256,14 +262,10 @@
 		"weight": 10
 	},
 	"BabaHeavyMG": {
-<<<<<<< Updated upstream
-		"buildPoints": 1,
-		"buildPower": 1,
-=======
 		"buildPoints": 5,
 		"buildPower": 7,
->>>>>>> Stashed changes
 		"damage": 18,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 7,
@@ -293,9 +295,10 @@
 		"weight": 1
 	},
 	"BabaJeepHeavyMG": {
-		"buildPoints": 10,
-		"buildPower": 1,
+		"buildPoints": 30,
+		"buildPower": 7,
 		"damage": 18,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 7,
@@ -329,6 +332,7 @@
 		"buildPoints": 10,
 		"buildPower": 1,
 		"damage": 10,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 5,
@@ -359,9 +363,10 @@
 		"weight": 1
 	},
 	"BabaJeepTwinMG": {
-		"buildPoints": 10,
-		"buildPower": 1,
+		"buildPoints": 20,
+		"buildPower": 5,
 		"damage": 14,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 6,
@@ -395,6 +400,7 @@
 		"buildPoints": 1,
 		"buildPower": 1,
 		"damage": 10,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 5,
@@ -427,6 +433,7 @@
 		"buildPoints": 1,
 		"buildPower": 1,
 		"damage": 30,
+		"designable": 0,
 		"effectSize": 25,
 		"explosionWav": "lrgexpl.ogg",
 		"facePlayer": 1,
@@ -466,6 +473,7 @@
 		"buildPoints": 1,
 		"buildPower": 1,
 		"damage": 80,
+		"designable": 0,
 		"effectSize": 100,
 		"explosionWav": "smlexpl.ogg",
 		"facePlayer": 1,
@@ -506,6 +514,7 @@
 		"buildPoints": 10,
 		"buildPower": 1,
 		"damage": 30,
+		"designable": 0,
 		"effectSize": 50,
 		"explosionWav": "smlexpl.ogg",
 		"facePlayer": 1,
@@ -547,6 +556,7 @@
 		"buildPoints": 10,
 		"buildPower": 1,
 		"damage": 30,
+		"designable": 0,
 		"effectSize": 50,
 		"explosionWav": "smlexpl.ogg",
 		"facePlayer": 1,
@@ -588,6 +598,7 @@
 		"buildPoints": 1,
 		"buildPower": 1,
 		"damage": 14,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 5,
@@ -618,9 +629,10 @@
 		"weight": 1
 	},
 	"BabaTrikeHeavyMG": {
-		"buildPoints": 10,
-		"buildPower": 2,
+		"buildPoints": 30,
+		"buildPower": 7,
 		"damage": 18,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 7,
@@ -654,6 +666,7 @@
 		"buildPoints": 10,
 		"buildPower": 2,
 		"damage": 10,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 5,
@@ -684,9 +697,10 @@
 		"weight": 1
 	},
 	"BabaTrikeTwinMG": {
-		"buildPoints": 10,
-		"buildPower": 2,
+		"buildPoints": 20,
+		"buildPower": 5,
 		"damage": 14,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 6,
@@ -717,9 +731,10 @@
 		"weight": 1
 	},
 	"BabaTwinMG": {
-		"buildPoints": 1,
-		"buildPower": 1,
+		"buildPoints": 2,
+		"buildPower": 3,
 		"damage": 14,
+		"designable": 0,
 		"effectSize": 100,
 		"facePlayer": 1,
 		"firePause": 6,
@@ -752,6 +767,7 @@
 		"buildPoints": 1,
 		"buildPower": 1,
 		"damage": 50,
+		"designable": 0,
 		"effectSize": 75,
 		"explosionWav": "lrgexpl.ogg",
 		"facePlayer": 1,
@@ -788,8 +804,6 @@
 		"weaponWav": "mortar.ogg",
 		"weight": 1750
 	},
-<<<<<<< Updated upstream
-=======
 	"BabaTowerHeavyMG": {
 		"buildPoints": 1,
 		"buildPower": 1,
@@ -866,7 +880,6 @@
 		"weaponWav": "rocket.ogg",
 		"weight": 10
 	},
->>>>>>> Stashed changes
 	"Bomb1-VTOL-LtHE": {
 		"buildPoints": 600,
 		"buildPower": 150,

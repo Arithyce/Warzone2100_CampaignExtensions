@@ -21,8 +21,8 @@
 	"A0BaBaBunker": {
 		"armour": 12,
 		"breadth": 1,
-		"buildPoints": 59,
-		"buildPower": 11,
+		"buildPoints": 60,
+		"buildPower": 30,
 		"ecmID": "ZNULLECM",
 		"height": 1,
 		"hitpoints": 300,
@@ -37,7 +37,7 @@
 		"thermal": 12,
 		"type": "DEFENSE",
 		"weapons": [
-			"MG3-Tower"
+			"BabaTowerHeavyMG"
 		],
 		"width": 1
 	},
@@ -155,7 +155,7 @@
 		"armour": 10,
 		"breadth": 1,
 		"buildPoints": 40,
-		"buildPower": 8,
+		"buildPower": 20,
 		"ecmID": "ZNULLECM",
 		"height": 1,
 		"hitpoints": 180,
@@ -170,30 +170,7 @@
 		"thermal": 8,
 		"type": "DEFENSE",
 		"weapons": [
-			"Mortar1Mk1"
-		],
-		"width": 1
-	},
-	"A0BaBaMortarPit0": {
-		"armour": 10,
-		"breadth": 1,
-		"buildPoints": 40,
-		"buildPower": 20,
-		"ecmID": "ZNULLECM",
-		"height": 1,
-		"hitpoints": 180,
-		"id": "A0BaBaMortarPit0",
-		"name": "Scavenger Mortar Pit",
-		"resistance": 150,
-		"sensorID": "BaBaSensor",
-		"strength": "MEDIUM",
-		"structureModel": [
-			"BLBRMRTP.PIE"
-		],
-		"thermal": 8,
-		"type": "DEFENSE",
-		"weapons": [
-			"Mortar1Mk1"
+			"BabaMortar"
 		],
 		"width": 1
 	},
@@ -1731,20 +1708,20 @@
 	"LookOutTower": {
 		"armour": 5,
 		"breadth": 1,
-		"buildPoints": 5,
-		"buildPower": 5,
+		"buildPoints": 10,
+		"buildPower": 2,
 		"ecmID": "ZNULLECM",
 		"height": 2,
 		"hitpoints": 200,
 		"id": "LookOutTower",
-		"name": "Look-Out Tower",
+		"name": "Scav Look-Out Tower",
 		"sensorID": "BaBaSensor",
 		"strength": "MEDIUM",
 		"structureModel": [
 			"blbrlook.PIE"
 		],
 		"thermal": 5,
-		"type": "CORNER WALL",
+		"type": "DEFENSE",
 		"width": 1
 	},
 	"NEXUSCWall": {
@@ -2988,6 +2965,7 @@
 		"thermal": 15,
 		"type": "GATE",
 		"width": 1
+	},
 	"A0LasSatCommand": {
 		"armour": 16,
 		"breadth": 2,
