@@ -1,11 +1,6 @@
 include("script/campaign/libcampaign.js");
 include("script/campaign/templates.js");
 
-camAreaEvent("NASDAO", function(droid)
-{
-	hackAddMessage("C1L2_OBJ", PROX_MSG, CAM_HUMAN_PLAYER, false);
-});
-
 camAreaEvent("NASDA", function(droid)
 {
 	DefendNASDA();
@@ -23,6 +18,7 @@ camAreaEvent("NASDAZ", function(droid)
 
 camAreaEvent("CAPTURE", function(droid)
 {
+	hackAddMessage("C1L2_OBJ", PROX_MSG, CAM_HUMAN_PLAYER, false);
 	camPlayVideos(["pcv448.ogg", {video: "C1L2_MSG2", type: MISS_MSG}]);
 	camSetExtraObjectiveMessage(_("Capture all functional NASDA structures"));
 });
@@ -139,6 +135,67 @@ camAreaEvent("astran2", function(droid)
 	playSound("pcv611.ogg");
 });
 
+function victoryIs()
+{
+	if (enumStruct(8,false).length === 0)
+	{
+		if (enumStruct(CAM_HUMAN_PLAYER,RESEARCH_LAB,false).length === 0)
+		{
+			if (!isStructureAvailable("A0ResearchFacility",CAM_HUMAN_PLAYER))
+			{
+				gameOverMessage(false);
+				return;
+			}
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,537) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,544) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,546) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,549) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,550) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,539) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,540) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,542) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		if (getObject(STRUCTURE,CAM_HUMAN_PLAYER,541) === null)
+		{
+			gameOverMessage(false);
+			return;
+		}
+		camCallOnce("objective")
+	}
+}
+
 function resetFactories()
 {
 	camSetFactories({
@@ -221,13 +278,17 @@ function camEnemyBaseEliminated_scavGroup0()
 	enableStructure("A0BaBaRocketPitAT", CAM_HUMAN_PLAYER);
 }
 
+function objective()
+{
+	hackRemoveMessage("C1L2_OBJ", PROX_MSG, CAM_HUMAN_PLAYER);
+	playSound("pcv626.ogg");
+}
+
 function isNASDAcaptured()
 {
-	if (enumStruct(8,STRUCTURE,false).length === 0)
+	if (enumStruct(8,false).length === 0)
 	{
 		return true;
-		hackRemoveMessage("C1L2_OBJ", PROX_MSG, CAM_HUMAN_PLAYER);
-		playSound("pcv626.ogg");
 	}
 }
 function enableFactories()
@@ -243,9 +304,10 @@ function eventStartLevel()
 {
 	var startpos = getObject("PlayerBase");
 	var lz = getObject("LandingZone");
+	var NASDA = 9;
 
 	camSetStandardWinLossConditions(CAM_VICTORY_STANDARD, "C1L3", {
-		callback: "isNASDAcaptured",
+		callback: "isNASDAcaptured"
 	});
 	
 
@@ -258,6 +320,8 @@ function eventStartLevel()
 	setAlliance(7, 9, true);
 	changePlayerColour(8, 10);
 	changePlayerColour(9, 10);
+	
+	setTimer("victoryIs", 5000)
 
 	// Give player briefing.
 	
@@ -268,7 +332,7 @@ function eventStartLevel()
 	}
 	else if (difficulty === INSANE)
 	{
-		setMissionTime(camMinutesToSeconds(60));
+		setMissionTime(camHoursToSeconds(1));
 	}
 	else
 	{
@@ -277,20 +341,19 @@ function eventStartLevel()
 
 	camSetArtifacts({
 		"ccarti": { tech: "R-Struc-CommandCenter" },
-		"pgenarti": { tech: [ "R-Struc-PowerGenerator", "R-Struc-PowerModuleMk1" ]},
+		"pgenarti": { tech: "R-Struc-PowerGenerator" },
 		"facarti": { tech: [ "R-Struc-Factory-Light", "R-Wpn-MG1Mk1", "R-Vehicle-Prop-Wheels", 
-		"R-Vehicle-BodyA01", "R-Struc-Factory-Module", "R-Sys-MobileRepairTurret01", 
-		"R-Sys-Sensor-Turret01", "R-Wpn-Flamer01Mk1" ]},
-		"resarti": { tech: [ "R-Struc-ResearchFacility", "R-Struc-Research-Module" ]},
+		"R-Vehicle-BodyA01", "R-Wpn-Flamer01Mk1" ]},
+		"resarti": { tech: "R-Struc-ResearchFacility" },
 		"crarti": { tech: "R-Struc-CommandRelay" },
-		"preqres1": { tech: [ "R-Sys-Sensor-Tower01", "R-Defense-Tower01" ]},
-		"cyfacarti": { tech: "R-Struc-Factory-Cyborg" },
+		"preqres1": { tech: "R-Sys-Engineering01" },
+		"preqres2": { tech: "R-Sys-Sensor-Turret01" },
+		"preqres3": { tech: "R-Sys-MobileRepairTurret01" },
+		"cyfacarti": { tech: "R-Comp-SynapticLink" },
 		"reparti": { tech: "R-Struc-RepairFacility" },
-		"preqres2": { tech: [ "R-Sys-Engineering01", "R-Wpn-Flamer-ROF01", "R-Wpn-Flamer-Damage01" ]},
-		"preqres3": { tech: [ "R-Wpn-MG-Damage01", "R-Wpn-MG-ROF01" ]},
 		"gatearti": { tech: "R-Defense-HardcreteGate" },
 		"wallarti": { tech: "R-Defense-HardcreteWall" },
-		"traparti": { tech: "R-Defense-TankTrap01" },
+		"traparti": { tech: "R-Defense-TankTrap01" }
 	});
 	
 	// Feed libcampaign.js with data to do the rest.

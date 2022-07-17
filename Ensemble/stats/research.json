@@ -124,7 +124,8 @@
 		"msgName": "RES_C_CT1",
 		"name": "Command Turret",
 		"requiredResearch": [
-			"R-Struc-CommandRelay"
+			"R-Struc-CommandRelay",
+			"R-Struc-Factory-Light"
 		],
 		"researchPoints": 1200,
 		"researchPower": 37,
@@ -159,6 +160,7 @@
 	"R-Cyborg-Metals01": {
 		"iconID": "IMAGE_RES_CYBORGTECH",
 		"id": "R-Cyborg-Metals01",
+		"keyTopic": 1,
 		"imdName": "icmolql.pie",
 		"msgName": "RES_CYMET1",
 		"name": "Cyborg Composite Alloys",
@@ -647,8 +649,8 @@
 	"R-Vehicle-Metals01": {
 		"iconID": "IMAGE_RES_DROIDTECH",
 		"id": "R-Vehicle-Metals01",
-		"imdName": "icmolql.pie",
 		"keyTopic": 1,
+		"imdName": "icmolql.pie",
 		"msgName": "RES_V_MET1",
 		"name": "Composite Alloys",
 		"requiredResearch": [
@@ -1153,7 +1155,7 @@
 		"name": "Flamer Cyborg",
 		"requiredResearch": [
 			"R-Wpn-Flamer01Mk1",
-			"R-Cyborg-Wpn-MG"
+			"R-Cyborg-Cyborgs-Light"
 		],
 		"researchPoints": 900,
 		"researchPower": 28,
@@ -1168,14 +1170,13 @@
 		"msgName": "RES_CYW_MG1",
 		"name": "Machinegunner Cyborg",
 		"requiredResearch": [
-			"R-Struc-Factory-Cyborg"
+			"R-Wpn-MG1Mk1",
+			"R-Cyborg-Cyborgs-Light"
 		],
 		"researchPoints": 600,
 		"researchPower": 18,
 		"resultComponents": [
-			"CyborgLegs",
-			"CyborgChaingun",
-			"CyborgLightBody"
+			"CyborgChaingun"
 		],
 		"statID": "MG1Mk1"
 	},
@@ -1267,6 +1268,10 @@
 		"keyTopic": 1,
 		"msgName": "RES_DF_HCW1",
 		"name": "Hardcrete",
+		"redStructures": [
+			"A0BaBaHorizontalWall",
+			"A0BabaCornerWall"
+		],
 		"requiredResearch": [
 			"R-Sys-Engineering01"
 		],
@@ -1313,6 +1318,7 @@
 	"R-Defense-Pillbox01": {
 		"iconID": "IMAGE_RES_DEFENCE",
 		"id": "R-Defense-Pillbox01",
+		"keyTopic": 1,
 		"msgName": "RES_DF_P1",
 		"name": "Heavy Machinegun Bunker",
 		"requiredResearch": [
@@ -1345,6 +1351,7 @@
 	"R-Defense-Pillbox05": {
 		"iconID": "IMAGE_RES_DEFENCE",
 		"id": "R-Defense-Pillbox05",
+		"keyTopic": 1,
 		"msgName": "RES_PB_FL",
 		"name": "Flamer Bunker",
 		"requiredResearch": [
@@ -1377,6 +1384,7 @@
 	"R-Defense-TankTrap01": {
 		"iconID": "IMAGE_RES_DEFENCE",
 		"id": "R-Defense-TankTrap01",
+		"keyTopic": 1,
 		"msgName": "RES_TTRAP1",
 		"name": "Tank Traps",
 		"requiredResearch": [
@@ -1552,12 +1560,12 @@
 	"R-Defense-WallUpgrade01": {
 		"iconID": "IMAGE_RES_DEFENCE",
 		"id": "R-Defense-WallUpgrade01",
+		"keyTopic": 1,
 		"imdName": "BLWALLH.PIE",
 		"msgName": "RES_DF_WU1",
 		"name": "Improved Hardcrete",
 		"requiredResearch": [
-			"R-Defense-HardcreteWall",
-			"R-Sys-Engineering01"
+			"R-Defense-HardcreteWall"
 		],
 		"researchPoints": 1200,
 		"researchPower": 37,
@@ -1660,7 +1668,7 @@
 		"msgName": "RES_ST_FCY1",
 		"name": "Cyborg Factory",
 		"requiredResearch": [
-			"R-Wpn-MG-Damage01",
+			"R-Struc-Factory-Module",
 			"R-Comp-SynapticLink"
 		],
 		"researchPoints": 1800,
@@ -1673,7 +1681,6 @@
 	"R-Struc-Factory-Module": {
 		"iconID": "IMAGE_RES_STRUCTURETECH",
 		"id": "R-Struc-Factory-Module",
-		"keyTopic": 1,
 		"msgName": "RES_ST_FM1",
 		"name": "Factory Module",
 		"requiredResearch": [
@@ -1708,6 +1715,7 @@
 	"R-Struc-Factory-Upgrade01": {
 		"iconID": "IMAGE_RES_STRUCTURETECH",
 		"id": "R-Struc-Factory-Upgrade01",
+		"keyTopic": 1,
 		"imdName": "BLFACT1.PIE",
 		"msgName": "RES_ST_FU1",
 		"name": "Automated Factory Production",
@@ -1856,10 +1864,10 @@
 	"R-Struc-PowerModuleMk1": {
 		"iconID": "IMAGE_RES_POWERTECH",
 		"id": "R-Struc-PowerModuleMk1",
-		"keyTopic": 1,
 		"msgName": "RES_POWMD1",
 		"name": "Power Module",
 		"requiredResearch": [
+			"R-Sys-Engineering01",
 			"R-Struc-PowerGenerator"
 		],
 		"researchPoints": 1200,
@@ -1879,6 +1887,7 @@
 	"R-Struc-RepairFacility": {
 		"iconID": "IMAGE_RES_STRUCTURETECH",
 		"id": "R-Struc-RepairFacility",
+		"keyTopic": 1,
 		"msgName": "RES_REPAI1",
 		"name": "Repair Facility",
 		"requiredResearch": [
@@ -1895,7 +1904,6 @@
 	"R-Struc-Research-Module": {
 		"iconID": "IMAGE_RES_STRUCTURETECH",
 		"id": "R-Struc-Research-Module",
-		"keyTopic": 1,
 		"msgName": "RES_ST_RM1",
 		"name": "Research Module",
 		"requiredResearch": [
@@ -2054,9 +2062,12 @@
 	"R-Sys-MobileRepairTurret01": {
 		"iconID": "IMAGE_RES_SYSTEMTECH",
 		"id": "R-Sys-MobileRepairTurret01",
-		"keyTopic": 1,
 		"msgName": "RES_REPTU1",
 		"name": "Mobile Repair Turret",
+		"requiredResearch": [
+			"R-Struc-Factory-Light",
+			"R-Struc-CommandCenter"
+		],
 		"researchPoints": 900,
 		"researchPower": 18,
 		"resultComponents": [
@@ -2069,9 +2080,12 @@
 		"id": "R-Sys-Sensor-Tower01",
 		"msgName": "RES_SY_STW1",
 		"name": "Sensor Tower",
+		"redStructures": [
+			"LookOutTower"
+		],
 		"requiredResearch": [
 			"R-Sys-Sensor-Turret01",
-			"R-Defense-Tower01"
+			"R-Sys-Engineering01"
 		],
 		"researchPoints": 900,
 		"researchPower": 28,
@@ -2085,6 +2099,10 @@
 		"id": "R-Sys-Sensor-Turret01",
 		"msgName": "RES_SENSO1",
 		"name": "Sensor Turret",
+		"requiredResearch": [
+			"R-Struc-CommandCenter",
+			"R-Struc-Factory-Light"
+		],
 		"researchPoints": 900,
 		"researchPower": 28,
 		"resultComponents": [
@@ -2328,7 +2346,6 @@
 		"msgName": "RES_TRACK1",
 		"name": "Tracked Propulsion",
 		"requiredResearch": [
-			"R-Sys-Engineering01",
 			"R-Vehicle-Prop-Halftracks"
 		],
 		"researchPoints": 2400,
@@ -2347,7 +2364,8 @@
 			"BaBaLegs", "BaBaProp"
 		],
 		"requiredResearch": [
-			"R-Struc-Factory-Light"
+			"R-Struc-Factory-Light",
+			"R-Struc-CommandCenter"
 		],
 		"researchPoints": 500,
 		"researchPower": 50,
@@ -2536,7 +2554,7 @@
 		"name": "Flamer Guard Tower",
 		"requiredResearch": [
 			"R-Wpn-Flamer01Mk1",
-			"R-Sys-Engineering01"
+			"R-Defense-Tower01"
 		],
 		"researchPoints": 480,
 		"researchPower": 45,
@@ -2551,7 +2569,7 @@
 		"msgName": "RES_W_FL_R1",
 		"name": "High-Pressure Gas Container",
 		"requiredResearch": [
-			"R-Wpn-Flamer-Damage01"
+			"R-Wpn-Flamer01Mk1"
 		],
 		"researchPoints": 1000,
 		"researchPower": 85,
@@ -2570,7 +2588,6 @@
 	"R-Wpn-Flamer-Damage01": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-Flamer-Damage01",
-		"keyTopic": 1,
 		"msgName": "RES_W_FL_D1",
 		"name": "High Temperature Flamer Gel",
 		"requiredResearch": [
@@ -2663,7 +2680,7 @@
 		"msgName": "RES_W_FL_ROF1",
 		"name": "Flamer Autoloader",
 		"requiredResearch": [
-			"R-Wpn-Flamer-Damage01"
+			"R-Wpn-Flamer01Mk1"
 		],
 		"researchPoints": 1100,
 		"researchPower": 95,
@@ -2689,9 +2706,11 @@
 	"R-Wpn-Flamer01Mk1": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-Flamer01Mk1",
-		"keyTopic": 1,
 		"msgName": "RES_FLAME1",
 		"name": "Flamer",
+		"requiredResearch": [
+			"R-Struc-Factory-Light"
+		],
 		"researchPoints": 600,
 		"researchPower": 18,
 		"resultComponents": [
@@ -2702,7 +2721,6 @@
 	"R-Wpn-MG-Damage01": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-MG-Damage01",
-		"keyTopic": 1,
 		"msgName": "RES_W_MG_D1",
 		"name": "Hardened MG Bullets",
 		"requiredResearch": [
@@ -2794,7 +2812,6 @@
 	"R-Wpn-MG-ROF01": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-MG-ROF01",
-		"keyTopic": 1,
 		"msgName": "RES_W_MG_ROF1",
 		"name": "Chaingun Upgrade",
 		"requiredResearch": [
@@ -2824,7 +2841,6 @@
 	"R-Wpn-MG1Mk1": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-MG1Mk1",
-		"keyTopic": 1,
 		"msgName": "RES_MG1MK1",
 		"name": "Machinegun",
 		"redComponents": [
@@ -2833,7 +2849,8 @@
 			"BabaFlame", "BabaRocket", "BabaRPG"
 		],
 		"requiredResearch": [
-			"R-Struc-Factory-Light"
+			"R-Struc-Factory-Light",
+			"R-Struc-CommandCenter"
 		],
 		"researchPoints": 500,
 		"researchPower": 50,
@@ -9167,7 +9184,6 @@
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-BMG2",
 		"keyTopic": 1,
-		"msgName": "RES_MG2MK1",
 		"name": "Buggy Twin MG",
 		"redComponents": [
 			"BabaBuggyMG"
@@ -9177,13 +9193,13 @@
 		"resultComponents": [
 			"BabaBuggyTwinMG"
 		],
-		"statID": "BabaBuggyTwinMG"
+		"statID": "BabaBuggyTwinMG",
+		"techCode": 1
 	},
 	"R-Wpn-JMG2": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-JMG2",
 		"keyTopic": 1,
-		"msgName": "RES_MG2MK1",
 		"name": "Jeep Twin MG",
 		"redComponents": [
 			"BabaJeepMG"
@@ -9193,13 +9209,13 @@
 		"resultComponents": [
 			"BabaJeepTwinMG"
 		],
-		"statID": "BabaJeepTwinMG"
+		"statID": "BabaJeepTwinMG",
+		"techCode": 1
 	},
 	"R-Wpn-TMG2": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-TMG2",
 		"keyTopic": 1,
-		"msgName": "RES_MG2MK1",
 		"name": "Trike Twin MG",
 		"redComponents": [
 			"BabaTrikeMG"
@@ -9209,13 +9225,13 @@
 		"resultComponents": [
 			"BabaTrikeTwinMG"
 		],
-		"statID": "BabaTrikeTwinMG"
+		"statID": "BabaTrikeTwinMG",
+		"techCode": 1
 	},
 	"R-Wpn-BAMG2": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-BAMG2",
 		"keyTopic": 1,
-		"msgName": "RES_MG2MK1",
 		"name": "BaBa Twin MG",
 		"redComponents": [
 			"BabaMG"
@@ -9225,13 +9241,13 @@
 		"resultComponents": [
 			"BabaTwinMG"
 		],
-		"statID": "BabaTwinMG"
+		"statID": "BabaTwinMG",
+		"techCode": 1
 	},
 	"R-Wpn-BMG3": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-BMG3",
 		"keyTopic": 1,
-		"msgName": "RES_MG3MK1",
 		"name": "Buggy Heavy MG",
 		"redComponents": [
 			"BabaBuggyTwinMG"
@@ -9241,13 +9257,13 @@
 		"resultComponents": [
 			"BabaBuggyHeavyMG"
 		],
-		"statID": "BabaBuggyHeavyMG"
+		"statID": "BabaBuggyHeavyMG",
+		"techCode": 1
 	},
 	"R-Wpn-BAMG3": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-BAMG3",
 		"keyTopic": 1,
-		"msgName": "RES_MG3MK1",
 		"name": "BaBa Heavy MG",
 		"redComponents": [
 			"BabaTwinMG"
@@ -9257,13 +9273,13 @@
 		"resultComponents": [
 			"BabaHeavyMG"
 		],
-		"statID": "BabaHeavyMG"
+		"statID": "BabaHeavyMG",
+		"techCode": 1
 	},
 	"R-Wpn-JMG3": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-JMG3",
 		"keyTopic": 1,
-		"msgName": "RES_MG3MK1",
 		"name": "Jeep Heavy MG",
 		"redComponents": [
 			"BabaJeepTwinMG"
@@ -9273,13 +9289,13 @@
 		"resultComponents": [
 			"BabaJeepHeavyMG"
 		],
-		"statID": "BabaJeepHeavyMG"
+		"statID": "BabaJeepHeavyMG",
+		"techCode": 1
 	},
 	"R-Wpn-TMG3": {
 		"iconID": "IMAGE_RES_WEAPONTECH",
 		"id": "R-Wpn-TMG3",
 		"keyTopic": 1,
-		"msgName": "RES_MG3MK1",
 		"name": "Trike Heavy MG",
 		"redComponents": [
 			"BabaTrikeTwinMG"
@@ -9289,7 +9305,60 @@
 		"resultComponents": [
 			"BabaTrikeHeavyMG"
 		],
-		"statID": "BabaTrikeHeavyMG"
+		"statID": "BabaTrikeHeavyMG",
+		"techCode": 1
+	},
+	"R-Vehicle-Prop-Wheelsv1": {
+		"iconID": "IMAGE_RES_DROIDTECH",
+		"id": "R-Vehicle-Prop-Wheelsv1",
+		"imdName": "PRLRWHL1.PIE",
+		"name": "Fast Wheels V1",
+		"redComponents": [
+			"wheeled01"
+		],
+		"requiredResearch": [
+			"R-Vehicle-Prop-Wheels"
+		],
+		"researchPoints": 1500,
+		"researchPower": 150,
+		"resultComponents": [
+			"wheeledV1"
+		],
+		"statID": "wheeledV1",
+		"techCode": 1
+	},
+	"R-Cyborg-Prop-Legsv1": {
+		"iconID": "IMAGE_RES_CYBORGTECH",
+		"id": "R-Cyborg-Prop-Legsv1",
+		"name": "Fast Cyborg Legs V1",
+		"replacedComponents": [
+			"CyborgLegs:CyborgLegsA"
+		],
+		"requiredResearch": [
+			"R-Cyborg-Cyborgs-Light"
+		],
+		"researchPoints": 1500,
+		"researchPower": 150,
+		"resultComponents": [
+			"CyborgLegsA"
+		],
+		"statID": "CyborgLegsA",
+		"techCode": 1
+	},
+	"R-Cyborg-Cyborgs-Light": {
+		"iconID": "IMAGE_RES_CYBORGTECH",
+		"id": "R-Cyborg-Cyborgs-Light",
+		"name": "Cyborg Technology",
+		"requiredResearch": [
+			"R-Struc-Factory-Cyborg"
+		],
+		"researchPoints": 500,
+		"researchPower": 50,
+		"resultComponents": [
+			"CyborgLegs",
+			"CyborgLightBody"
+		],
+		"techCode": 1
 	},
 	"R-Vehicle-BodyA01": {
 		"iconID": "IMAGE_RES_DROIDTECH",
@@ -9303,7 +9372,8 @@
 			"B3bodyRKbuggy01", "B3body-sml-buggy01"
 		],
 		"requiredResearch": [
-			"R-Struc-Factory-Light"
+			"R-Struc-Factory-Light",
+			"R-Struc-CommandCenter"
 		],
 		"researchPoints": 500,
 		"researchPower": 50,
@@ -9361,7 +9431,7 @@
 		"id": "R-Struc-ResearchFacility",
 		"keyTopic": 1,
 		"msgName": "RES_ST_RESLAB",
-		"name": "Command Center",
+		"name": "Research Facility",
 		"researchPoints": 1000,
 		"researchPower": 100,
 		"resultStructures": [
@@ -9372,6 +9442,7 @@
 	"R-Defense-HardcreteGate": {
 		"iconID": "IMAGE_RES_DEFENCE",
 		"id": "R-Defense-HardcreteGate",
+		"keyTopic": 1,
 		"msgName": "RES_DF_HCW1",
 		"name": "Hardcrete Gate",
 		"requiredResearch": [
