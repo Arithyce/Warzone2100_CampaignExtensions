@@ -1,0 +1,31 @@
+{
+	"scavCrane": {
+		"buildPoints": 30,
+		"buildPower": 7,
+		"constructPoints": 6,
+		"droidType": "DROID_CONSTRUCT",
+		"hitpoints": 35,
+		"id": "scavCrane",
+		"name": "Crane Arm",
+		"sensorModel": "cranearm.pie",
+		"weight": 400
+	},
+	"Spade1Mk1": {
+		"buildPoints": 85,
+		"buildPower": 17,
+		"constructPoints": 10,
+		"designable": 1,
+		"droidType": "DROID_CONSTRUCT",
+		"hitpoints": 80,
+		"id": "Spade1Mk1",
+		"name": "Truck",
+		"sensorModel": "TRLCON.PIE",
+		"weight": 600
+	},
+	"ZNULLCONSTRUCT": {
+		"id": "ZNULLCONSTRUCT",
+		"mountModel": "TRLCON.PIE",
+		"name": "Z NULL CONSTRUCT",
+		"sensorModel": "TRLCON.PIE"
+	}
+}
