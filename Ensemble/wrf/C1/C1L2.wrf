@@ -1,0 +1,16 @@
+/*
+ * C1L2.wrf
+ *
+ */
+
+/* Directory for Proximity messages and mission briefs */
+directory	"messages"
+
+file		SMSG		"BRIEFC1L2.txt"
+file		SMSG		"PROXC1L2.txt"
+
+directory "script"
+file JAVASCRIPT "rules.js"
+
+directory "script/campaign"
+file JAVASCRIPT "C1L2.js"
