@@ -1,4 +1,0 @@
-directory	"messages/strings"
-file		STR_RES	"GENTEXT.txt"
-file		STR_RES	"RESTEXT.txt"
-file		STR_RES	"SCRTEXT.txt"
