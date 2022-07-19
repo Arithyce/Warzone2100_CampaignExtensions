@@ -1,0 +1,42 @@
+/* Campaign Alternative 1 Mission Briefing text */
+
+C1IN_MSG1			_("OBJECTIVE: Locate and secure the NASDA Base:")
+C1IN_MSG2			_("Establish a base, then search for the Pre-Collapse Base.")
+C1IN_MSG3			_("This Base contains technology vital for the success of the Ensemble.")
+
+// Mission 1
+// C1L1_MSG/Message 3
+C1L1_MSG1			_("CRITICAL MISSION: Scavenger Raiders:") 
+C1L1_MSG2			_("Scavenger raiders are approaching our base.")
+C1L1_MSG3			_("Defend the base then destroy the Scavenger camps.")
+
+// C1L1_MSG2/Message 4
+C1L1_MSG4			_("New structures are available.")
+C1L1_MSG5			_("New units are available.")
+
+// C1L1_MSG3/Message 1
+C1L1_MSG6			_("Our scouts have found a location for our base.")
+C1L1_MSG7			_("Head up the first northern path ahead.")
+C1L1_MSG8			_("And then destroy the scavenger outpost and build our base.")
+
+// C1L1_MSG4/Message 2
+C1L1_MSG9			_("Our next target should be the scavenger base to the south.")
+C1L1_MSG10			_("It is likely that there are superior technologies in this base.")
+C1L1_MSG11			_("Once the base is eliminated, we may recover these technologies.")
+C1L1_MSG12			_("The scavengers in our area are unusually advanced and dangerous.")
+
+// Mission 2
+// C1L2_MSG/Message 1
+C1L2_MSG1			_("Commander, it is time for us to search for the NASDA Base.")
+C1L2_MSG2			_("We do not know the exact location, so we must search for it.")
+C1L2_MSG3			_("Be advised, the Raider threat in our sector is extreme.")
+
+// C1L2_MSG1/Message 2
+C1L2_MSG4			_("New structures are available.")
+C1L2_MSG5			_("New units are available.")
+
+// C1L2_MSG2/Message 3
+C1L2_MSG6			_("Commander, there are functional structures in the NASDA Base.")
+C1L2_MSG7			_("Get our units close to these structures to capture them.")
+C1L2_MSG8			_("Once captured, search the Base for Artifacts and research them.")
+C1L2_MSG9			_("Non-functional structures must be destroyed to recover artifacts.")

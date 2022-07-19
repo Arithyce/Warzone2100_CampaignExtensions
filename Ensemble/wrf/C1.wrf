@@ -1,0 +1,12 @@
+/***********************************************************/
+/*  You may have to modify this file for it to be correct! */ 
+/*******************       wrf\C1.wrf      *******************/
+
+
+directory	"messages/strings"
+file		STR_RES	"GENTEXT.txt"
+file		STR_RES	"C1TEXT.txt"
+file		STR_RES	"RESTEXT.txt"
+file		STR_RES	"SCRTEXT.txt"
+directory	"messages"
+file		SMSG	"C1MSGS.txt"
